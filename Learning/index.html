@@ -27,8 +27,14 @@
 
   <body>
     <!--body: elements that appear on the page-->
-    <h1>Heading 1</h1>
+    <h1>Homepage</h1>
+    <!-- image is embedded into page using src attribute, which tells the browser where the image file is -->
+     <!-- can use relative path to refer to an image within my repo folder -->
+      <!-- every image must also have an alt -- alternative text attribute -->
     <img src="images/coffee.jpg" alt="A hand holding a steaming coffee mug on a balcony overlooking a field">
+    <!-- use an absolute path to display an image not located in own web server/directory -->
+
+    <img src="https://www.theodinproject.com/mstile-310x310.png" alt="The Odin Project Logo" height="300" width="310">
     <h2>HTML</h2>
     <p>HTML &lt;tutorial&gt;! &copy;</p>
     <h3>Code</h3>
@@ -42,11 +48,34 @@
     <p class="username">@irondeficientprincess</p>
     <!--text ele, P: short for paragraph, <em> em element emphasizes content-->
     <p>test test <em>testing</em></p> 
+
+    <!-- a: anchor element; anchor tag on its own won't link to anything, would look like plain 
+     text without href attribute -->
+     <!-- href: hypertext ref,HTML attribute that gives extra info to HTML ele, always goes with 
+      ele's opening tag. It's value is destination I want link to go. Browser gives text a blue color + underlines it.
+      can link to HTML docs, vids, pdfs, images, etc -->
+
+      <!-- this will open link in same tab as webpage that contains it. _self is the default target -->
+       <!-- relative link: links to other pages w/in own website. Don't need to include doamin name, 
+        assumes its the same as page we created link on. Only include file path to other page, relative to page
+        I'm creating link on -->
     <a href="sampleBoilerPlate.html">Boiler Plate</a>
     <!--<a href="images/headshot.JPG" download>Download My Photo</a>-->
     <a href="#section-css">CSS</a>
-    <a href="https://google.com">Google</a> <!--always use absolute URLS for external websites, no / in front. This opens in same tab-->
-    <a href="https://google.com" target="_blank">New tab Google</a>
+
+    <!-- absolute links: links to page on other websites. Template: scheme://domain/path -->
+    <!--always use absolute URLS for external websites, no / in front. FYI this still opens in same tab-->
+
+    <a href="https://google.com">Google</a>  
+    
+    <!-- the target attribute opens link in new tab, use _blank to override _self default -->
+     <!-- rel: attribute that describes relationship bw current page and linked doc -->
+      <!-- nopener: attribute ensures link opened in new tab or window can't interact/access orig page.
+       w/out it, new page can use JavaScript to manipulate orig page, which poses a security risk -->
+       <!-- noreferrer: attribute that prevents new page from knowing where user came from 
+        + prevents enw page from accessing orig page -->
+    <!-- security: prevents phishing where opened link may change orig webpage to a differ one to trick users (tabnabbing) -->
+    <a href="https://google.com" target="_blank" rel="noopener noreferrer">New tab Google</a>
     <!--<a href="mailto:lizovieda@gmail.com">Email me</a> -->
     <h2>HTML</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam deserunt, molestiae at ipsa accusamus consequuntur itaque dignissimos velit nulla, tempore saepe incidunt id quas a ea modi magni doloribus omnis error sapiente nihil. Eum ipsam nemo quia beatae, veniam distinctio optio ipsa! Dolorem reprehenderit soluta mollitia officia corrupti minima blanditiis temporibus cupiditate quisquam fuga, hic eos iusto non id inventore deleniti nihil culpa sint voluptatum magni porro distinctio ab quas corporis. Doloribus accusamus nulla ex est illum dicta vel tempora maxime expedita pariatur facilis enim vero corporis, nemo id ut voluptatibus alias similique placeat! Porro eligendi fugit voluptatem enim blanditiis non quaerat vel consequatur, soluta sequi temporibus similique quas! Sint officiis repudiandae expedita quo eaque ullam, velit sed? Nam pariatur possimus aliquam adipisci! Voluptates molestias eius amet ea illum dolores dolorem commodi sunt, facere earum hic ab cumque harum possimus non repellat iure libero doloribus similique? Aut quisquam sint voluptatum sed rem quam ea eveniet minima, iure ratione adipisci tenetur. Est doloremque non debitis voluptatem ut fugiat natus repellat rerum illum odio molestiae in cum dolorem omnis beatae, ipsa aut quaerat nostrum explicabo voluptas. Id distinctio, excepturi similique ea non aut doloribus odio porro. Corporis ipsum porro iste voluptatem esse?</p>

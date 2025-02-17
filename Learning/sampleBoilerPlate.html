@@ -1,13 +1,41 @@
-<!DOCTYPE html>
-<html lang="en"> <!--common best practice to define en as attribute-->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="HTML, CSS">
-    <meta name="description" content="...">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<!DOCTYPE html> <!--tells browser to render in HTML5-->
+<html lang="en"> <!--this is root ele of doc, every other ele in doc in descendant of it, 
+    common best practice to define en as attribute, which provide additional info about HTML elements -->
+    <head> <!--where I put meta-info about webpages + stuff webpages need to render correctly in browser, 
+        don't use any ele that displays content on webpage-->
+        <meta charset="UTF-8"> <!--ensures webpage will display special symbols + characs from differ langs correctly-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="HTML, CSS">
+        <meta name="description" content="...">
+        <title>Sample Boiler Plate</title> <!--what's displayed in webpage's browser tab-->
+    </head>
+    <body> <!-- where all content that will be display to users will go - text, imags, lists, links, etc-->
+        <h1>Hello World!</h1>
+        <p>Lorem ipsum, <strong>dolor</strong> sit amet consectetur adipisicing elit. </p> 
+        <p>illo amet exercitationem mollitia architecto neque id et reprehenderit reiciendis?</p>
+        <!-- Mac comment shortcut: Cmd + /  -->
+        <!-- Windows/Linux: Ctrl + / -->
+
+        <!-- unordered list, each list item begins w/bullet pt -->
+         <ul>  
+            <p>Favorite Books</p>
+            <li>Howl's Moving Castle</li>
+            <li>Lord of the Flies</li>
+            <li>Dr. Jekyll and Mr. Hyde</li>
+            <li>A Wizard of Earthsea</li>
+         </ul>
+         <!-- ordered list, each item begins with number 1-4 -->
+         <ol>
+            <p>Top 5 Movies</p>
+            <li>Collateral</li>
+            <li>Tropic Thunder</li>
+            <li>Prospect</li>
+            <li>The Man from U.N.C.L.E.</li>
+         </ol>
+    </body>
+
 </html>
+
+<!--run code thorugh W3 HTML validator. 
+Validators ensure your markup is correct and  provide feedback on syntax errors, 
+such as missing closing tags and extra spaces in your HTML.-->
